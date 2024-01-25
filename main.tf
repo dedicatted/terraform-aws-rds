@@ -48,21 +48,10 @@ module "db" {
 
   parameters = [
     {
-      name  = "autovacuum"
-      value = 1
-    },
-    {
       name  = "client_encoding"
       value = "utf8"
     }
   ]
-
-  db_option_group_tags = {
-    "Sensitive" = "low"
-  }
-  db_parameter_group_tags = {
-    "Sensitive" = "low"
-  }
 }
 
 
